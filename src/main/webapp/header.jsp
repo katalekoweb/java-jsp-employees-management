@@ -14,6 +14,16 @@
 </head>
 <body>
 
+<%
+	response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // works in HTTP 1.1
+	response.setHeader("Pragma", "no-cache");
+	response.setHeader("Expires", "0");
+
+	if (session.getAttribute("username") == null) {
+		response.sendRedirect("login.jsp");
+	}
+%>	
+
 <div class="bg-gradient-to-b from-lime-600 via-lime-700 to-lime-600 h-16 flex items-center px-6">
 		<div class="container mx-auto flex items-center justify-between text-white">
 			<a href="welcome.jsp" class="text-xl font-bold text-white">Gestão de Funcionários</a>

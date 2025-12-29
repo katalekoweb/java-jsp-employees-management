@@ -14,16 +14,6 @@
 
 <%@ include file="header.jsp" %>
 
-	<%
-		response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // works in HTTP 1.1
-		response.setHeader("Pragma", "no-cache");
-		response.setHeader("Expires", "0");
-	
-		if (session.getAttribute("username") == null) {
-			response.sendRedirect("login.jsp");
-		}
-	%>	
-	
 	<div class="px-6">
 		<div class="container mx-auto h-[70vh] p-5 bg-gradient-to-b from-lime-300 to-lime-900 text-zinc-800 rounded-xl shadow flex flex-col items-center justify-center my-6">
 			<div class="text-5xl">Seja bemvindo a sua plataforma de RH</div>
