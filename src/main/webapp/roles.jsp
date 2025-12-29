@@ -78,7 +78,7 @@ try {
 			<div class="text-lg font-bold">Lista de cargos</div>
 			
 			<div class="w-full overflow-x-auto">
-				<table class="w-full">
+				<table class="w-full border border-gray-200" id="roles">
 					<thead>
 						<tr>
 							<th>ID</th>
@@ -114,6 +114,12 @@ try {
 			</div>
 		</div>
 	</div>
+	
+	<script type="text/javascript">
+	let table = new DataTable('#roles', {
+	    responsive: true
+	});
+	</script>
 </div>
 
 </body>
