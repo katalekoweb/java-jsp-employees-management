@@ -17,9 +17,9 @@
 <div class="bg-gradient-to-b from-lime-600 via-lime-700 to-lime-600 h-16 flex items-center px-6">
 		<div class="container mx-auto flex items-center justify-between text-white">
 			<a href="welcome.jsp" class="text-xl font-bold text-white">Gestão de Funcionários</a>
-			<div class="flex items-center space-x-4">
+			<div class="flex items-center space-x-6 uppercase">
 				<a>Funcionários</a>
-				<a>Departamentos</a>
+				<a>Folha de pagamento</a>
 				<a>Departamentos</a>
 				<a href="roles.jsp">Cargos</a>
 				
