@@ -102,7 +102,7 @@ try {
 							<form action="role" method="post">
 								<input type="hidden" class="w-full p-3 shadow" name="id" id="id" value="${role.id}"  />
 								<input type="hidden" class="w-full p-3 shadow" name="del" id="del" value="1"  />
-								<button class="underline" onclick="return confirm('Tem certeza?')" type="submit">Remover</button>
+								<button class="underline text-red-600" onclick="return confirm('Tem certeza?')" type="submit">Remover</button>
 							</form>
 						</td>
 						</tr>
